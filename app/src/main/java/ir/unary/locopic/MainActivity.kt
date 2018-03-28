@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
+
     private val PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 10005
     private var mLocationPermissionGranted: Boolean = false
 
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
         map_btn.setOnClickListener(this)
         val behzad =  "hello boys"
+        val s="fffffffffffff"
     }
 
     override fun attachBaseContext(newBase: Context) {

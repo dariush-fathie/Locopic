@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
         map_btn.setOnClickListener(this)
         val thisIsChanged = "asda"
+        val n = "this is new change to dev branch !!!"
     }
 
     override fun attachBaseContext(newBase: Context) {

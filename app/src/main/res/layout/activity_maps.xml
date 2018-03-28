@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ir.unary.locopic.MapsActivity" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#3d73d6" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#3d73d6" />
+
+    <TextView
+        android:id="@+id/tv_centerPoint"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:background="#b13d3d3d"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_alignParentBottom="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        app:alignItems="flex_end"
+        app:alignContent="flex_end" >
+        <Button
+            android:id="@+id/btn_nearbyPlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="place" />
+
+        <Button
+            android:id="@+id/btn_updateLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="up-loc" />
+
+        <Button
+            android:id="@+id/btn_addPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add Point" />
+        <Button
+            android:id="@+id/btn_computeOfsset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offset" />
+        <Button
+            android:id="@+id/btn_computeDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="distance" />
+        <Button
+            android:id="@+id/btn_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="degree: -180" />
+        <Button
+            android:id="@+id/btn_deletePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete Point" />
+
+        <Button
+            android:id="@+id/btn_drawPoly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="draw poly" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</RelativeLayout>
+
